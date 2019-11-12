@@ -1,0 +1,15 @@
+// !important!
+// do not import global.less into other .less file(it will pollute the local stykle)
+// import it directly in the index.tsx
+@import './theme.less';
+
+body{
+  margin: 0px;
+}
+
+.logo{
+  background-color: @logo-color;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: @white;
+}

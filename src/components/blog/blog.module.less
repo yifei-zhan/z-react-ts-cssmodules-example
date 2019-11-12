@@ -1,0 +1,31 @@
+@import '../../theme.less';
+@import '../../variables.less';
+
+.wrapper{
+  padding: @content-vertical-padding @content-horizontal-padding;
+  .header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+    &__title{
+      font-size: @font-size-1600;
+      margin-right: 10px;
+    }
+
+    &__info{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & .header__time{
+        #global.time();
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .content{
+    font-size: @font-size-800;
+  }
+}

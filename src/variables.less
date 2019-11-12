@@ -1,0 +1,23 @@
+@import './theme.less';
+
+// layout
+@header-height: 48px;
+@content-horizontal-padding: 20px;
+@content-vertical-padding: 25px;
+
+// global mixins
+#global{
+  .time{
+    color: @font-color-grey;
+    font-size: @font-size-400;
+
+    &::before {
+      content: '';
+      height: 100%;
+      width: 1px;
+      margin-right: 5px;
+      background-color: rgba(0, 0, 0, 0);
+      border-left: 1px solid @font-color-grey;
+    }
+  }
+}

@@ -1,7 +1,10 @@
 @import './theme.less';
+@import './variables.less';
+
+@sidebar-width: 200px;
 
 .header{
-  height: 48px;
+  height: @header-height;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,6 +12,14 @@
   background-color: @primary-color;
 }
 
-.content{
+.main{
   display: flex;
+
+  &__siderbar{
+    width: @sidebar-width;
+  }
+
+  &__content{
+    width: calc(100% - @sidebar-width);
+  }
 }
