@@ -1,7 +1,11 @@
-// !important!
-// do not import global.less into other .less file(it will pollute the local stykle)
-// import it directly in the index.tsx
-@import './theme.less';
+
+/* !important!
+   do not import global.less into other .less file, because all styles in global.less
+   will also be imported.
+   Instead, import it directly in the index.tsx
+*/
+
+@import './variables.less';
 
 body{
   margin: 0px;

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import './theme.less';
 import './global.less';
 import SideBar from './components/sidebar/sidebar';
 import styles from './index.module.less';

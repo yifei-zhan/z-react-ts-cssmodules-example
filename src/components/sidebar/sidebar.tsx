@@ -7,7 +7,7 @@ export default function SideBar() {
   return (
     <div className={styles['wrapper']}>
       <header className={styles['header']}>Sidebar Title</header>
-      <div className="logo">CHECK24</div>
+      <div className={`${styles['logo-group']} logo`}>CHECK24</div>
       <ul>
         <li>Item A</li>
         <li>Item B</li>
